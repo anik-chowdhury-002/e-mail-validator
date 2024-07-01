@@ -39,12 +39,6 @@ Thanks to the Streamlit team for creating an awesome framework for building web 
 
 Happy validating! 🎉
 
-#Markdown Notes:
-Replace the placeholder links (e.g., https://example.com/email-validator-banner.png, https://example.com/email-validator-screenshot.png, and https://github.com/your-username/email-validator-webapp.git) with the actual links.
-Ensure the email address in the Contact section is replaced with your actual email.
-Adjust the acknowledgements and credits as needed.
-
-
 
 
 
