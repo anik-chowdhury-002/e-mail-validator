@@ -1,0 +1,68 @@
+Email Validation Program
+
+Description:
+This Python script validates an email address based on specific criteria. It checks for length, valid characters, proper placement of special characters, and more. If the email address fails any of the checks, the script provides specific error messages indicating why the email is invalid. If the email address passes all checks, it is considered valid.
+
+Algorithm
+-----------------------------------------------------------
+The algorithm for email validation follows these steps:
+
+Input: The user is prompted to enter an email address.
+
+Length Check: The email address must be at least 6 characters long.
+
+Starting Character: The first character of the email address must be an alphabet letter.
+
+Single '@' Character: The email address must contain exactly one '@' character.
+
+Dot Position: A dot ('.') must appear either at the 3rd or 4th position from the end of the email address.
+
+No Spaces: The email address must not contain any spaces.
+
+No Capital Letters: The email address must not contain any capital letters.
+
+Allowed Special Characters: Only the special characters '_', '.', and '@' are allowed in the email address.
+
+Error Handling: If any of the above checks fail, appropriate error messages are appended to a list and displayed to the user. If no errors are found, the email is declared valid.
+
+Usage
+1 Run the script in a Python environment.
+2 Enter the email address when prompted.
+3 The script will display either a list of errors or a message indicating that the email is valid.
+
+Example Inputs and Outputs
+
+Input: john.doe@example.com
+Output: Valid email
+Input: johndoe@ex ample.com
+Output: Email should not contain any spaces.
+Input: Johndoe@example.com
+Output: Email should not contain any capital letters.
+Input: john.doe@examplecom
+Output: Email should contain a '.' either at the 3rd or 4th position from the end.
+Input: johndoe@example..com
+Output: Email should contain exactly one '@' character.
+Input: johndoeexample.com
+Output: Email should contain exactly one '@' character.
+Input: jo@example.com
+Output: Email should be at least 6 characters long.
+Input: 1johndoe@example.com
+Output: The first character should be an alphabet.
+Input: john.doe@exa_mple.com
+Output: Valid email
+Input: john.doe@example@com
+Output: Email should contain exactly one '@' character.
+Input: john.doe@example.c
+Output: Email should contain a '.' either at the 3rd or 4th position from the end.
+Input: john.doe@ex!ample.com
+Output: Email should not contain special characters other than '_', '.', and '@'.
+Input: john.doe@
+Output: Email should contain a '.' either at the 3rd or 4th position from the end.
+Input: john@doe@example.com
+Output: Email should contain exactly one '@' character.
+Input: john.doe@example..com
+Output: Valid email (note: this passes the checks but may still be an invalid email format in practice).
+Additional Notes
+An email like johndoe@.example.com would not pass typical email validation checks outside of this script, even though it might pass the given script's checks because it adheres to the defined rules.
+Real-world email validation often involves more complex rules and regular expressions to cover all edge cases and conform to RFC standards.
+These examples demonstrate various scenarios, highlighting both valid and invalid inputs according to the script's criteria.
